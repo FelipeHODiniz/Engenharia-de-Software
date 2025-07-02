@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventos</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <script defer src="eventos.js"></script>
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <img src="/img/green.png" alt="">
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="localidades.html">Localidades</a></li>
+          <li><a href="espacos.html">Espaços</a></li>
+          <li><a href="promotores.html">Promotores</a></li>
+          <li><a href="prestadores.html">Prestadores</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="tarefas.html">Tarefas</a></li>
+          <li><a href="ingressos.html">Ingressos</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="relatorios.html">Relatórios</a></li>
+          <li><a href="sac.html">SAC</a></li>
+          <li><a href="painel.html">Painel</a></li>
+          <li><a href="login.html">Olá, Felipe</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header>
+        <h1>🎉 Eventos</h1>
+        <p>Gerencie eventos e defina as etapas do fluxo de execução.</p>
+      </header>
+
+      <section class="form-section">
+        <form id="form-evento">
+          <input type="text" id="nomeEvento" placeholder="Nome do Evento" required />
+          <input type="date" id="dataEvento" required />
+          <input type="text" id="tipoEvento" placeholder="Tipo (Show, Feira, etc)" required />
+          <select id="etapaEvento" required>
+            <option value="">Etapa do Fluxo</option>
+            <option value="Planejamento">Planejamento</option>
+            <option value="Preparação">Preparação</option>
+            <option value="Realização">Realização</option>
+            <option value="Prestação de Contas">Prestação de Contas</option>
+          </select>
+          <select id="prestadores" required>
+            <option value="">Prestadores de Serviço</option>
+            <option value="">Henrique (Padeiro)</option>
+            <option value="Planejamento">Felipe (Staff)</option>
+            <option value="Preparação">Max (T.I.)</option>
+          </select>
+          <textarea id="descricaoEvento" placeholder="Descrição do Evento" rows="3" required></textarea>
+
+          <div id="patrocinadoresContainer">
+            <label>Patrocinadores:</label>
+            <div class="patrocinador-field">
+              <input type="text" class="patrocinador-nome" placeholder="Nome do Patrocinador" />
+              <input type="number" class="patrocinador-valor" placeholder="Valor (R$)" step="0.01" />
+              <button type="button" class="add-patrocinador">➕</button>
+            </div>
+          </div>
+
+
+          <button type="submit">Salvar</button>
+        </form>
+
+
+      </section>
+
+      <section class="list-section">
+        <div id="lista-eventos" class="card-grid"></div>
+      </section>
+
+    </main>
+  </div>
+</body>
+
+</html>
