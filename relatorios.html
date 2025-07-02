@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relatórios</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <script defer src="relatorios.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+        <img src="/img/green.png" alt="">
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="localidades.html">Localidades</a></li>
+          <li><a href="espacos.html">Espaços</a></li>
+          <li><a href="promotores.html">Promotores</a></li>
+          <li><a href="prestadores.html">Prestadores</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="tarefas.html">Tarefas</a></li>
+          <li><a href="ingressos.html">Ingressos</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="relatorios.html">Relatórios</a></li>
+          <li><a href="sac.html">SAC</a></li>
+          <li><a href="painel.html">Painel</a></li>
+          <li><a href="login.html">Olá, Felipe</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header>
+        <h1>📊 Relatórios</h1>
+        <p>Emitir relatórios de prestação de contas por evento.</p>
+      </header>
+
+      <section class="form-section">
+        <form id="form-relatorio">
+          <input type="text" id="eventoRelatorio" placeholder="Nome do Evento" required />
+          <button type="submit">Gerar Relatório</button>
+        </form>
+      </section>
+
+      <section class="list-section">
+        <ul id="lista-relatorios"></ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
